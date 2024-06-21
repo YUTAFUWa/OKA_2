@@ -18,29 +18,11 @@ body {
 }
 
 h1 {
-  font-size: 30px;
-}
-
-h2,
-.subTitleEn {
-  font-size: 20px;
+  text-align: center;
 }
 
 h2 {
-  padding-top: 10px;
-}
-
-.subTitleEn {
-  margin: 0 auto;
-  margin-bottom: 20px;
-  padding-bottom: 5px;
-  border-bottom: solid 1px #000000;
-  width: 90%;
-}
-
-h3 {
-  font-size: 17px;
-  padding: 5px 0px;
+  text-align: center;
 }
 
 footer {
@@ -219,7 +201,10 @@ nav .inner ul li a:hover {
 
 
 
+/* ===================== */
 /* =====パソコン用CSS===== */
+/* ===================== */
+
 @media (min-width: 768px) {
   
   h1{
@@ -227,11 +212,6 @@ nav .inner ul li a:hover {
     padding-bottom: 20px;
   }
 
-  h1,
-  h2,
-  .subTitleEn {
-    text-align: center;
-  }
 
   /* PC 事業内容 */
 
@@ -293,25 +273,33 @@ nav .inner ul li a:hover {
 }
 
 
-
+/* ==================== */
 /* =====スマホ用CSS===== */
+/* ==================== */
+
 @media (max-width: 767px) {
 
   h1 {
-    font-size: 30px;
-    padding-top: 15px;
+    font-size: 28px;
+    font-weight: 400;
+    padding-top: 16px;
     padding-left: 10px;
     padding-bottom: 10px;
   }
 
-  h2,
-  .subTitleEn {
+  h2{
     font-size: 22px;
-    text-align: center;
+    font-weight: 300;
+    padding-top: 20px;
+    padding-bottom: 40px;
   }
 
   h3 {
     font-size: 18px;
+  }
+
+  p{
+    font-size: 15px;
   }
 
   /* SP トップ画像 */
