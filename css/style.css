@@ -174,9 +174,10 @@ nav .inner ul li a:hover {
 /* 代表挨拶 */
 
 .greeting__photo img{
-  width: 95%;
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
   display: block;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 /* お問い合わせ */
@@ -456,8 +457,8 @@ nav .inner ul li a:hover {
 
 .photo__thumbnail a img {
   object-fit: cover;
-  width: 120px;
-  padding: 4px;
+  width: 170px;
+  padding: 5px;
 }
 
 .lum-img{
