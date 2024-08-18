@@ -16,13 +16,3 @@ mask.onclick = () => {
 inner.onclick = () => {
   nav.classList.toggle("open");
 }
-
-
-// Luminousを起動させる
-// new LuminousGallery(document.querySelectorAll('.luminous'));
-
-document.addEventListener("DOMContentLoaded", function() {
-  document.querySelectorAll('.luminous').forEach(function(element) {
-      new Luminous(element);
-  });
-});

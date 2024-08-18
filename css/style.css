@@ -34,7 +34,7 @@ nav {
   left: -300px;
   bottom: 0;
   transition: all 0.5s;
-  z-index: 3;
+  z-index: 10;
   opacity: 0;
 }
 
@@ -134,9 +134,11 @@ nav .inner ul li a:hover {
   top: 0;
   left: 0;
   position: fixed;
-  opacity: 0.8;
+  opacity: 0.9;
   cursor: pointer;
+  z-index: 9;
 }
+
 
 /* メイン画像 */
 
@@ -279,7 +281,7 @@ nav .inner ul li a:hover {
   }
 
   section{
-    padding: 0 10px 20px 10px;
+    padding: 0 5px 20px 5px;
   }
 
   h1 {
@@ -321,7 +323,7 @@ nav .inner ul li a:hover {
   }
 
   h3 {
-    font-size: 16px;
+    font-size: 20px;
     margin-left: 3px;
     margin-bottom: 5px;
     font-weight: 550;
@@ -348,7 +350,6 @@ nav .inner ul li a:hover {
     justify-content: center;
   }
 
-
   .item {
     padding-bottom: 30px;
     position: relative;
@@ -357,7 +358,7 @@ nav .inner ul li a:hover {
   .item img {
     object-fit: cover;
     width: 90vw;
-    height: 200px;
+    height: 230px;
     filter: drop-shadow(3px 3px 2px #333);
     border-radius: 10px;
   }  
@@ -365,7 +366,7 @@ nav .inner ul li a:hover {
   .grayscale{
     position: absolute;
     width: 100%;
-    height: 200px;
+    height: 230px;
     top: 0;
     right: 0;
     left: 0;
@@ -377,7 +378,7 @@ nav .inner ul li a:hover {
 
   .item h3{
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: 50px;
     color: white;
     font-weight: bold;
@@ -388,7 +389,7 @@ nav .inner ul li a:hover {
     margin: 5px auto;
     width: 75%;
     position: absolute;
-    top: 120px;
+    top: 130px;
     left: 50px;
     color: white;
     z-index: 3;
@@ -398,27 +399,35 @@ nav .inner ul li a:hover {
 
 
   /* SP 作業写真 */
+
 .photo__thumbnail {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.photo__thumbnail a{
+/* .photo__thumbnail a{
   display: inline-block;
+} */
+
+.photo__thumbnail a {
+  text-decoration: none;
 }
 
 .photo__thumbnail a img {
-  object-fit: cover;
+  /* object-fit: cover; */
   width: 170px;
-  padding: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .lum-img{
   width: 95%;
 }
 
-
+.lum-lightbox{
+  z-index: 5;
+}
 
 
 }
