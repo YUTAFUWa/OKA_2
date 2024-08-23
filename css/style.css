@@ -158,14 +158,14 @@ nav .inner ul li a:hover {
   justify-content: center;
 }
 
-.photo__thumbnail a{
+/* .photo__thumbnail a{
   display: inline-block;
-}
+} */
 
 .photo__thumbnail a img {
   object-fit: cover;
   width: 400px;
-  padding: 7px;
+  padding: 15px;
 }
 
 .lum-img{
@@ -218,8 +218,15 @@ nav .inner ul li a:hover {
     font-size: 27px;
   }
 
+  section{
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+
   h2{
-    padding: 40px 0;
+    margin-top: 60px;
+    margin-bottom: 150px;
     font-size: 25px;
   }
 
