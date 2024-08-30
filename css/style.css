@@ -158,20 +158,12 @@ nav .inner ul li a:hover {
   justify-content: center;
 }
 
-/* .photo__thumbnail a{
-  display: inline-block;
-} */
-
 .photo__thumbnail a img {
   object-fit: cover;
   width: 400px;
-  padding: 15px;
+  height: auto;
+  padding: 4px;
 }
-
-.lum-img{
-  width: 95%;
-}
-
 
 /* 代表挨拶 */
 
@@ -288,7 +280,7 @@ nav .inner ul li a:hover {
   }
 
   section{
-    padding: 0 5px 20px 5px;
+    padding: 0 2px 20px 2px;
   }
 
   h1 {
@@ -413,28 +405,12 @@ nav .inner ul li a:hover {
   justify-content: center;
 }
 
-/* .photo__thumbnail a{
-  display: inline-block;
-} */
-
 .photo__thumbnail a {
   text-decoration: none;
 }
-
 .photo__thumbnail a img {
-  /* object-fit: cover; */
-  width: 170px;
-  padding-left: 5px;
-  padding-right: 5px;
+  width: 180px;
+  border-radius: 9px;
 }
-
-.lum-img{
-  width: 95%;
-}
-
-.lum-lightbox{
-  z-index: 5;
-}
-
 
 }

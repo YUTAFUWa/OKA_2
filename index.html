@@ -5,10 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link
+
+    <!-- lightbox CSS CDN読み込み -->
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/luminous-lightbox@2.4.0/dist/luminous-basic.min.css"
+    /> -->
+
+    <!-- PhotoSwipe CSS CDN読み込み -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+
     <title>岡総合外壁工 ロープアクセスによる無足場工法</title>
     <meta
       name="”description"
@@ -63,7 +74,6 @@
         <h2>事業内容</h2>
 
         <div class="list">
-
           <div class="item">
             <h3>シーリング工事</h3>
             <img src="image/sealing_finish.jpg" alt="シーリング工事" />
@@ -104,7 +114,7 @@
             <div class="grayscale"></div>
             <p>竪樋の修理や塗装等を行い綺麗な状態に戻します。</p>
           </div>
-          
+
           <div class="item">
             <h3>外壁調査</h3>
             <img src="image/exterior-wall-inspection.JPG" alt="外壁調査" />
@@ -113,7 +123,6 @@
               建物の劣化状況を調査し、タイルやシーリングなど外壁全体の劣化状況を調査いたします。
             </p>
           </div>
-          
         </div>
       </section>
 
@@ -165,33 +174,92 @@
       <section id="photo">
         <h2>作業写真</h2>
 
-        <div class="photo__thumbnail">
-          
-          <a href="image/0001.jpg" class="luminous">
-            <img src="image/0001.jpg" alt="写真1" />
-          </a>
-          
-          <a href="image/0002.jpg" class="luminous">
-            <img src="image/0002.jpg" alt="写真2" />
-          </a>
-          
-          <a href="image/0003.jpg" class="luminous">
-            <img src="image/0003.jpg" alt="写真3" />
-          </a>
-          
-          <a href="image/0004.jpg" class="luminous">
-            <img src="image/0004.jpg" alt="写真4" />
-          </a>
-          
-          <a href="image/0005.jpg" class="luminous">
-            <img src="image/0005.jpg" alt="写真5" />
-          </a>
-          
-          <a href="image/0006.jpg" class="luminous">
-            <img src="image/0006.jpg" alt="写真6" />
-          </a>
-        
-        </div>
+        <div class="photo__thumbnail" id="photoGallery">
+          <a
+          href="image/0001.jpg"
+          data-pswp-width="1388"
+          data-pswp-height="925"
+          target="_blank"
+        >
+          <img
+            src="image/0001.jpg"
+            alt=""
+            loading="lazy"
+            height="925px"
+            width="1388px"
+          />
+        </a>
+        <a
+          href="image/0002.jpg"
+          data-pswp-width="1388"
+          data-pswp-height="925"
+          target="_blank"
+        >
+          <img
+            src="image/0002.jpg"
+            alt=""
+            loading="lazy"
+            height="925px"
+            width="1388px"
+          />
+        </a>
+        <a
+          href="image/0003.jpg"
+          data-pswp-width="1388"
+          data-pswp-height="925"
+          target="_blank"
+        >
+          <img
+            src="image/0003.jpg"
+            alt=""
+            loading="lazy"
+            height="925px"
+            width="1388px"
+          />
+        </a>
+        <a
+          href="image/0004.jpg"
+          data-pswp-width="1388"
+          data-pswp-height="925"
+          target="_blank"
+        >
+          <img
+            src="image/0004.jpg"
+            alt=""
+            loading="lazy"
+            height="925px"
+            width="1388px"
+          />
+        </a>
+        <a
+          href="image/0005.jpg"
+          data-pswp-width="1388"
+          data-pswp-height="925"
+          target="_blank"
+        >
+          <img
+            src="image/0005.jpg"
+            alt=""
+            loading="lazy"
+            height="925px"
+            width="1388px"
+          />
+        </a>
+        <a
+          href="image/0006.jpg"
+          data-pswp-width="1388"
+          data-pswp-height="925"
+          target="_blank"
+        >
+          <img
+            src="image/0006.jpg"
+            alt=""
+            loading="lazy"
+            height="925px"
+            width="1388px"
+          />
+        </a>
+            </div>
       </section>
 
       <!-- 代表挨拶 -->
@@ -229,9 +297,27 @@
 
       <!-- JS読み込み -->
       <script src="script.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/luminous-lightbox@2.4.0/dist/luminous.min.js"></script>
-      <script>new LuminousGallery(document.querySelectorAll(".luminous"));
+
+      <!-- lightbox JS CDNとJSコード -->
+      <!-- <script src="https://cdn.jsdelivr.net/npm/luminous-lightbox@2.4.0/dist/luminous.min.js"></script>
+      <script>
+        new LuminousGallery(document.querySelectorAll(".luminous"));
+      </script> -->
+
+      <!-- PhotoSwipe JS CDN読み込み -->
+      <script type="module">
+        import PhotoSwipeLightbox from "https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe-lightbox.esm.min.js";
+        const lightbox = new PhotoSwipeLightbox({
+          gallery: "#photoGallery",
+          children: "a",
+          pswpModule: () =>
+            import(
+              "https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.4/photoswipe.esm.min.js"
+            ),
+        });
+        lightbox.init();
       </script>
+
     </main>
 
     <!-- footer -->
