@@ -1,4 +1,7 @@
-/* =====共通要素===== */
+/* ============================================================= */
+/* =====共通用CSS===== */
+/* ============================================================= */
+
 html {
   scroll-behavior: smooth;
 }
@@ -219,12 +222,11 @@ nav .inner ul li a:hover {
   h2{
     margin-top: 60px;
     margin-bottom: 150px;
-    font-size: 25px;
+    font-size: 30px;
   }
 
   h3{
-    padding: 5px 0;
-    font-size: 18px;
+    font-size: 25px;
   }
 
   p{
@@ -240,28 +242,50 @@ nav .inner ul li a:hover {
     justify-content: center;
   }
 
-  .list::after {
-    content: "";
-    display: block;
-    width: 430px;
-  }
-
   .item {
-    padding: 15px;
+    padding: 30px 20px;
+    position: relative;
   }
 
   .item img {
     object-fit: cover;
     width: 400px;
-    height: 300px;
+    height: 230px;
+    filter: drop-shadow(3px 3px 2px #333);
+    border-radius: 10px;
+  }  
+
+  .grayscale{
+    position: absolute;
+    width: 400px;
+    height: 230px;
+    top: 30px;
+    right: 0;
+    left: 20px;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    z-index: 2;
+  }
+
+  .item h3{
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    color: white;
+    font-weight: bold;
+    z-index: 3;
   }
 
   .item p {
     margin: 5px auto;
-    width: 400px;
-
+    width: 75%;
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    color: white;
+    z-index: 3;
   }
-
 
 }
 
