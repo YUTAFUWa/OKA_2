@@ -8,7 +8,6 @@ html {
 
 body {
   color: #333;
-  /* font-weight: 400; */
   font-family: "Helvetica Neue",
     Arial,
     "Hiragino Kaku Gothic ProN",
@@ -23,11 +22,21 @@ section:nth-child(odd){
 
 h1{
   font-family: 'Lora', serif;
+  font-size: 24px;
 }
 
 h2 {
   font-family: 'Lora', serif;
   text-align: center;
+  font-size: 20px;
+}
+
+h3{
+  font-size: 18px;
+}
+
+p{
+  font-size: 16px;
 }
 
 footer {
@@ -37,7 +46,7 @@ footer {
   color: #797979;
 }
 
-/* ハンバーガーメニュー */
+/* ⬇︎⬇︎⬇︎　ハンバーガーメニュー　⬇︎⬇︎⬇︎ */
 nav {
   font-family: 'Lora', serif;
   display: block;
@@ -48,7 +57,7 @@ nav {
   left: -300px;
   bottom: 0;
   transition: all 0.5s;
-  z-index: 10;
+  z-index: 13;
   opacity: 0;
 }
 
@@ -76,7 +85,7 @@ nav .inner ul li a {
   display: block;
   text-decoration: none;
   color: #333;
-  font-size: 14px;
+  font-size: 16px;
   padding: 1rem;
   transition-duration: 0.2s;
 }
@@ -150,11 +159,11 @@ nav .inner ul li a:hover {
   position: fixed;
   opacity: 0.9;
   cursor: pointer;
-  z-index: 9;
+  z-index: 12;
 }
 
 
-/* メイン画像 */
+/* ⬇︎⬇︎⬇︎　メイン画像　⬇︎⬇︎⬇︎ */
 
 #topPhoto img {
   display: block;
@@ -165,7 +174,7 @@ nav .inner ul li a:hover {
 }
 
 
-/* 作業写真 */
+/* ⬇︎⬇︎⬇︎　作業写真　⬇︎⬇︎⬇︎ */
 .photo__thumbnail {
   display: flex;
   flex-wrap: wrap;
@@ -179,7 +188,7 @@ nav .inner ul li a:hover {
   padding: 4px;
 }
 
-/* 代表挨拶 */
+/* ⬇︎⬇︎⬇︎　代表挨拶　⬇︎⬇︎⬇︎ */
 
 .greeting__photo img{
   width: 100vw;
@@ -188,7 +197,7 @@ nav .inner ul li a:hover {
   /* margin: 0 auto; */
 }
 
-/* お問い合わせ */
+/* ⬇︎⬇︎⬇︎　お問い合わせ　⬇︎⬇︎⬇︎⬇ */
 #contact{
   padding-bottom: 70px;
 }
@@ -199,9 +208,10 @@ nav .inner ul li a:hover {
 
 .content{
   padding-left: 20px;
+  padding-bottom: 5px;
 }
 
-/* フッター */
+/* ⬇︎⬇︎⬇︎　フッター　⬇︎⬇︎⬇︎ */
 .copyright{
   text-align: center;
   padding-bottom: 20px;
@@ -221,7 +231,6 @@ nav .inner ul li a:hover {
     padding-top: 30px;
     padding-bottom: 20px;
     padding-left: 20px;
-    font-size: 27px;
   }
 
   section{
@@ -233,15 +242,6 @@ nav .inner ul li a:hover {
   h2{
     margin-top: 60px;
     margin-bottom: 150px;
-    font-size: 30px;
-  }
-
-  h3{
-    font-size: 25px;
-  }
-
-  p{
-    font-size: 15px;
   }
 
 
@@ -310,27 +310,27 @@ nav .inner ul li a:hover {
 
 @media (max-width: 767px) {
 
-  body{
-    font-size: 13px;
-  }
-
   section{
     padding: 0 2px 20px 2px;
   }
 
   h1 {
-    font-size: 20px;
-    /* font-weight: bold; */
+    font-weight: bold;
     padding-top: 19px;
     padding-bottom: 15px;
+    width: 100%;
     text-align: center;
     line-height: 1.2;
     letter-spacing: .05em; 
+    height: 54px;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 10;
   }
 
   h2{
-    font-size: 22px;
-    /* font-weight: bold; */
     line-height: 1;
     text-align: center;
     letter-spacing: .05em;
@@ -357,14 +357,16 @@ nav .inner ul li a:hover {
   }
 
   h3 {
-    font-size: 20px;
     margin-left: 3px;
     margin-bottom: 5px;
-    /* font-weight: 550; */
   }
 
 
   /* SP トップ画像 */
+  #topPhoto{
+    padding-top: 10px;
+  }
+
   #topPhoto img {
     height: 300px;
   }
@@ -374,6 +376,7 @@ nav .inner ul li a:hover {
   .toggle-btn {
     top: 15px;
     right: 15px;
+    z-index: 11;
   }
 
 
